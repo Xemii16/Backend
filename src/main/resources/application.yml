@@ -1,0 +1,24 @@
+server:
+  port: 6060
+  address: localhost
+
+spring:
+  main:
+    web-application-type: servlet
+  datasource:
+    hikari:
+      jdbc-url: jdbc:postgresql://localhost:5432/costumer
+      username: postgres
+      password: password
+    url: jdbc:postgresql://localhost:5432/costumer
+    user: postgres
+    password: password
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+    show-sql: true
+
